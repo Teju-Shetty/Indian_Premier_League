@@ -5,14 +5,14 @@ import plotly.graph_objs as go
 import numpy as np
 
 # Function to load data
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_data():
     deliveries_data = pd.read_excel('analysis_ball_by_ball_2008_2023.xlsx')
     match_data = pd.read_excel('analysis_ipl_match_result_2008_2023.xlsx')
     return deliveries_data, match_data
 
 # Function to preprocess data
-@st.cache
+@st.cache(allow_output_mutation=True)
 def preprocess_data(deliveries_data, match_data):
     # Merge data to get season-wise total runs
     season_data = match_data[['id', 'Season']].merge(deliveries_data, left_on='id', right_on='id', how='left').drop('id', axis=1)
@@ -30,7 +30,7 @@ def preprocess_data(deliveries_data, match_data):
     return match_per_season, season, runs_per_season
 
 # Function to generate the plots
-@st.cache
+@st.cache(allow_output_mutation=True)
 def generate_plots(match_per_season, season, runs_per_season):
     colors = ['turquoise',] * 16
     colors[5] = 'crimson'
@@ -63,7 +63,7 @@ def generate_plots(match_per_season, season, runs_per_season):
     return fig_matches, fig_runs, fig_runs_per_match
 
 # Function to generate toss-related plots
-@st.cache
+@st.cache(allow_output_mutation=True)
 def generate_toss_plots(match_data):
     colors = ['turquoise',] * 18
     colors[0] = 'crimson'
