@@ -144,7 +144,7 @@ def main():
         fig_toss_win, fig_toss_decision, fig_toss_decision_across_season, fig_toss_win_implication = generate_toss_plots(match_data)
         
         # Arrange the recent four graphs in two rows with two graphs in each row
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
         
         with col1:
             #st.subheader("Number of tosses won by each team")
