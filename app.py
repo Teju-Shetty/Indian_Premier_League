@@ -163,52 +163,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Credit Section
-# Define the developer name and their GitHub and LinkedIn URLs
-developer_name = "Tejasvi Shetty"
-github_url = "https://github.com/Teju-Shetty"
-linkedin_url = "https://www.linkedin.com/in/tejasvi-shetty-8801ba228"
-
-# Create a row with the name and icons
-
-st.title("")
-st.markdown("<p style='text-align: center; color: #E9E8E8; font-family:'alata', sans-serif;'>Developed by </p>", unsafe_allow_html=True)
-
-#container = st.container()
-#container.markdown(f"<div style='display: flex; align-items: center; justify-content: center;'><p style='margin-right: 10px;'>{developer_name} <a href='{github_url}' target='_blank'><img style='margin-right: 10px; width:25px;height:25px; background-color: white; border-radius: 50%;' src='https://github.com/favicon.ico' alt='GitHub'></a> <a href='{linkedin_url}' target='_blank'><img style='width: 20px; height: 20px;' src='https://www.linkedin.com/favicon.ico' alt='LinkedIn'></a></p></div>", unsafe_allow_html=True)
-
-       
-# container.markdown(f"<div style='display: flex; align-items: center; justify-content: center;'><p style='margin-right: 10px;'>{developer_name1} <a href='{github_url1}' target='_blank'><img style='margin-right: 10px;width:25px;height:25px;  background-color: white; border-radius: 50%;' src='https://github.com/favicon.ico' alt='GitHub'></a> <a href='{linkedin_url1}' target='_blank'><img style='width: 20px; height: 20px;' src='https://www.linkedin.com/favicon.ico' alt='LinkedIn'></a></p></div>", unsafe_allow_html=True)
-
-
-st.title("")
-
-# Contact Support
-
-
-st.markdown("<h2 style='text-align: center; color: #E9E8E8; font-family:'alata', sans-serif;'>Feedback</h2>", unsafe_allow_html=True)
-
-
-contact_form = """
-<form action="https://formsubmit.co/feedback.wachatanalyzer@gmail.com" method="POST">
-     <input type="hidden" name="_captcha" value="false">
-     <input type="text" name="name" placeholder="Your name" required >
-     <input type="email" name="email" placeholder="Your email" required>
-     <textarea name="message" placeholder="Your message here" ></textarea>
-     <button type="submit">Send</button>
-</form>
-"""
-
-st.markdown(contact_form, unsafe_allow_html=True)
-
-# Use Local CSS File
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
-local_css("style/style.css")
-
 # Support Ends
 
 st.caption('© 2023. All rights reserved.')
