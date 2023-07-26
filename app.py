@@ -174,8 +174,8 @@ linkedin_url = "https://www.linkedin.com/in/tejasvi-shetty-8801ba228"
 st.title("")
 st.markdown("<p style='text-align: center; color: #E9E8E8; font-family:'alata', sans-serif;'>Developed by </p>", unsafe_allow_html=True)
 
-container = st.container()
-container.markdown(f"<div style='display: flex; align-items: center; justify-content: center;'><p style='margin-right: 10px;'>{developer_name} <a href='{github_url}' target='_blank'><img style='margin-right: 10px; width:25px;height:25px; background-color: white; border-radius: 50%;' src='https://github.com/favicon.ico' alt='GitHub'></a> <a href='{linkedin_url}' target='_blank'><img style='width: 20px; height: 20px;' src='https://www.linkedin.com/favicon.ico' alt='LinkedIn'></a></p></div>", unsafe_allow_html=True)
+#container = st.container()
+#container.markdown(f"<div style='display: flex; align-items: center; justify-content: center;'><p style='margin-right: 10px;'>{developer_name} <a href='{github_url}' target='_blank'><img style='margin-right: 10px; width:25px;height:25px; background-color: white; border-radius: 50%;' src='https://github.com/favicon.ico' alt='GitHub'></a> <a href='{linkedin_url}' target='_blank'><img style='width: 20px; height: 20px;' src='https://www.linkedin.com/favicon.ico' alt='LinkedIn'></a></p></div>", unsafe_allow_html=True)
 
        
 # container.markdown(f"<div style='display: flex; align-items: center; justify-content: center;'><p style='margin-right: 10px;'>{developer_name1} <a href='{github_url1}' target='_blank'><img style='margin-right: 10px;width:25px;height:25px;  background-color: white; border-radius: 50%;' src='https://github.com/favicon.ico' alt='GitHub'></a> <a href='{linkedin_url1}' target='_blank'><img style='width: 20px; height: 20px;' src='https://www.linkedin.com/favicon.ico' alt='LinkedIn'></a></p></div>", unsafe_allow_html=True)
